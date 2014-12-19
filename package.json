@@ -1,8 +1,22 @@
 {
-	"name": "PiMO",
-	"version": "0.0.1",
-	"private": true,
-	"dependencies": {
-		"socket.io": "~0.9.16"
-	}
- }
+  "name": "PiMO",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "nodemon pimo.js"
+  },
+  "dependencies": {
+    "express": "~4.2.0",
+    "morgan": "~1.0.0",
+    "cookie-parser": "~1.0.1",
+    "body-parser": "~1.0.0",
+    "debug": "~0.7.4",
+    "jade": "~1.3.0",
+    "gulp": "~3.7.0",
+    "gulp-sass": "~0.7.1",
+    "gulp-uglify": "~0.3.0",
+    "gulp-minify-css": "~0.3.4",
+    "socket.io": "~1.0.6",
+    "serve-favicon": "~2.1.7"
+  }
+}

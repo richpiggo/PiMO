@@ -1,0 +1,22 @@
+doctype html
+html
+
+	head
+		title PiMO
+		link(rel="stylesheet", href="/css/remote.css")
+		link(rel="manifest" href="manifest.json")
+		link(rel="icon" href="launcher-icon-1x.png" type="image/png")
+
+	body
+		#button1.button
+		#button2.button
+		#button3.button
+
+		hr
+
+		input#msg(type="text" autocomplete="off")
+		button#msgbtn send
+		ul#messages
+
+		script(src="/socket.io/socket.io.js")
+		script(src="/js/remote.js")

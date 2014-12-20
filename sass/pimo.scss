@@ -4,13 +4,8 @@ body {
 	text-align: center;
 }
 .screen {
-	width: 420px;
-	height: 300px;
-	margin: 0 auto;
-	position: relative;
-	background-image: url("../img/screen.png");
-	background-repeat: no-repeat;
-
+	width: 100%;
+	height: 100%;
 	.face {
 		position: absolute;
 		top: 90px;

@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "nodemon pimo.js"
+    "start": "node pimo.js"
   },
   "dependencies": {
     "body-parser": "~1.0.0",

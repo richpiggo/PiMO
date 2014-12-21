@@ -32,17 +32,15 @@
 	app.use( bodyParser.urlencoded() );
 	app.use( cookieParser() );
 	app.use( express.static(path.join(__dirname, "public")) );
-	app.set( "views", path.join(__dirname, "views") );
-	app.set( "view engine", "jade" );
 
 
 /** routes, bloody routes ==========================================================*/
 	
 	app.get( "/", function (req, res) {
-		res.render("remote");
+		res.sendfile(__dirname + "/public/remote.html");
 	});
 	app.get( "/pimo", function (req, res) {
-		res.render("pimo");
+		res.sendfile(__dirname + "/public/pimo.html");
 	});
 
 

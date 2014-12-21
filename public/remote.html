@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>PiMO</title>
+		<link rel="stylesheet" href="/css/remote.css">
+		<link rel="manifest" href="manifest.json">
+		<link rel="icon" href="launcher-icon-1x.png" type="image/png">
+	</head>
+	<body>
+		<div id="button1" class="button"></div>
+		<div id="button2" class="button"></div>
+		<div id="button3" class="button"></div>
+
+		<hr>
+
+		<input id="msg" type="text" autocomplete="off">
+		<button id="msgbtn">send</button>
+
+		<ul id="messages"></ul>
+
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="/js/remote.js"></script>
+
+	</body>
+</html>

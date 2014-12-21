@@ -23,7 +23,6 @@
 	var debug = require("debug")("PiMO");
 
 
-
 /** setup ================================================*/
 
 	app.use( favicon(__dirname + "/public/launcher-icon-4x.png") );
@@ -32,6 +31,7 @@
 	app.use( bodyParser.urlencoded() );
 	app.use( cookieParser() );
 	app.use( express.static(path.join(__dirname, "public")) );
+
 
 
 /** routes, bloody routes ==========================================================*/
@@ -51,9 +51,9 @@
 		console.log( "a user connected" );
 		
 		// chat message
-		socket.on( "chat message", function (from, msg) {
-			var message = "message from "+from+": "+msg;
-			console.log(message);
+		socket.on( "chat message", function (msg) {
+			var message = "message: "+msg;
+			console.log(msg);
 			io.emit( "chat message", message );
 		});
 		
